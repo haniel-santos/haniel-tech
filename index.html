@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>haniel.tech — Automação e tecnologia para empresas</title>
+  <meta name="description" content="Automação de processos, atendimento inteligente via WhatsApp e criação de sites e sistemas para sua empresa. Diagnóstico gratuito.">
+  <meta property="og:title" content="haniel.tech — Automação e tecnologia para empresas">
+  <meta property="og:description" content="Transforme processos, aumente vendas e atenda melhor com soluções inteligentes para o seu negócio.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://haniel.tech">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="haniel.tech — Automação e tecnologia para empresas">
+  <meta name="twitter:description" content="Transforme processos, aumente vendas e atenda melhor com soluções inteligentes para o seu negócio.">
+  <meta property="og:image" content="https://haniel.tech/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://haniel.tech/og-image.jpg">
+  <link rel="canonical" href="https://haniel.tech">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+  <div class="launch-bar" id="launchBar">
+    🚀 Diagnóstico gratuito por tempo limitado
+    <button class="launch-close" id="launchClose" aria-label="Fechar banner">&times;</button>
+  </div>
+
+  <header role="banner">
+    <div class="container">
+      <a href="#hero" class="logo" aria-label="Voltar ao topo"><span>haniel</span>.tech</a>
+      <nav aria-label="Navegação principal">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#problema">Problemas</a></li>
+          <li><a href="#solucao">Soluções</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20saber%20mais%20sobre%20a%20haniel.tech" target="_blank" rel="noopener" class="nav-whatsapp" aria-label="Fale conosco pelo WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        <span>Fale conosco</span>
+      </a>
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-orb-2" aria-hidden="true"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <h1>
+            Automação e<br>
+            <span>tecnologia</span> para<br>
+            empresas
+          </h1>
+          <p class="tagline">Transforme processos, aumente vendas e atenda melhor com soluções inteligentes para o seu negócio.</p>
+          <div class="hero-buttons">
+            <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20gratuito" target="_blank" rel="noopener" class="btn-primary" aria-label="Solicitar diagnóstico gratuito pelo WhatsApp">
+              Quero um diagnóstico gratuito
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+            <a href="#solucao" class="btn-secondary">Ver soluções</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <h4>+50</h4>
+              <p>Projetos entregues</p>
+            </div>
+            <div class="hero-stat">
+              <h4>98%</h4>
+              <p>Satisfação</p>
+            </div>
+            <div class="hero-stat">
+              <h4>24h</h4>
+              <p>Resposta média</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-code-block" id="typingCode" aria-hidden="true">
+            <div class="cursor-line"><span class="cursor">|</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="problema" aria-labelledby="problema-title">
+    <div class="container">
+      <span class="section-tag">Problemas</span>
+      <h2 id="problema-title" class="section-title">Parece familiar?</h2>
+      <p class="section-desc">Se você enfrenta um desses desafios no dia a dia, está na hora de mudar.</p>
+      <div class="problem-grid">
+        <div class="problem-card reveal">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Demora para responder clientes</h3>
+          <p>Clientes esperam horas ou até dias por uma resposta simples. Enquanto isso, eles procuram a concorrência.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v4"/><path d="M12 18v4"/><path d="M4.93 4.93l2.83 2.83"/><path d="M16.24 16.24l2.83 2.83"/><path d="M2 12h4"/><path d="M18 12h4"/><path d="M4.93 19.07l2.83-2.83"/><path d="M16.24 7.76l2.83-2.83"/></svg>
+          </div>
+          <h3>Perda de vendas por falta de follow-up</h3>
+          <p>Leads esquentam e esfriam porque não existe um processo automatizado de acompanhamento.</p>
+        </div>
+        <div class="problem-card reveal">
+          <div class="problem-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Processos manuais que tomam tempo</h3>
+          <p>Sua equipe gasta horas com tarefas repetitivas que poderiam ser automatizadas em segundos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="solucao" aria-labelledby="solucao-title">
+    <div class="container">
+      <span class="section-tag">Solução</span>
+      <h2 id="solucao-title" class="section-title">O que oferecemos</h2>
+      <p class="section-desc">Soluções práticas e prontas para transformar a operação do seu negócio.</p>
+      <div class="solution-grid">
+        <div class="solution-card reveal">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="12" y1="8" x2="12" y2="14"/><line x1="9" y1="11" x2="15" y2="11"/></svg>
+          </div>
+          <h3>Automação de Atendimento</h3>
+          <p>Chatbots inteligentes e respostas automáticas no WhatsApp para nunca mais deixar um cliente sem resposta.</p>
+        </div>
+        <div class="solution-card reveal">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3>Sites e Sistemas</h3>
+          <p>Criação de sites profissionais, landing pages e sistemas sob medida para alavancar sua presença digital.</p>
+        </div>
+        <div class="solution-card reveal">
+          <div class="solution-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Diagnóstico de WhatsApp</h3>
+          <p>Análise completa do seu WhatsApp Business para identificar gargalos e oportunidades de melhoria.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" aria-labelledby="depoimentos-title">
+    <div class="container">
+      <span class="section-tag">Depoimentos</span>
+      <h2 id="depoimentos-title" class="section-title">Quem já usou recomenda</h2>
+      <p class="section-desc">Veja os resultados que nossos clientes alcançaram com a haniel.tech.</p>
+      <div class="testimonial-grid">
+        <div class="testimonial-card reveal">
+          <div class="quote" aria-hidden="true">"</div>
+          <span class="testimonial-result">Vendas +35%</span>
+          <blockquote>Antes: 3h para responder um cliente.<br>Depois: respostas em 15s com automação.</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">CM</div>
+            <div>
+              <strong>Carlos M.</strong>
+              <span>Loja de Conveniência</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="quote" aria-hidden="true">"</div>
+          <span class="testimonial-result">Follow-up 100% automático</span>
+          <blockquote>Antes: 20 leads perdidos por mês.<br>Depois: todo lead recebe acompanhamento.</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AR</div>
+            <div>
+              <strong>Ana R.</strong>
+              <span>E-commerce de Moda</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <div class="quote" aria-hidden="true">"</div>
+          <span class="testimonial-result">Equipe alinhada</span>
+          <blockquote>Antes: cada atendente falava de um jeito.<br>Depois: manual padrão seguido por todos.</blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">FL</div>
+            <div>
+              <strong>Felipe L.</strong>
+              <span>Clínica Odontológica</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="precos" aria-labelledby="precos-title">
+    <div class="container">
+      <span class="section-tag">Investimento</span>
+      <h2 id="precos-title" class="section-title">Pacotes e preços</h2>
+      <p class="section-desc">Escolha o plano ideal para o momento do seu negócio.</p>
+      <div class="pricing-grid">
+        <div class="pricing-card reveal">
+          <h3>Diagnóstico</h3>
+          <div class="price">R$ 0</div>
+          <div class="price-sub">Gratuito</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Análise do WhatsApp Business</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>3 pontos de melhoria</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Relatório simples</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20gratuito" target="_blank" rel="noopener" class="btn-pricing">Quero meu diagnóstico</a>
+        </div>
+
+        <div class="pricing-card reveal">
+          <h3>Beta</h3>
+          <div class="price">R$ 397</div>
+          <div class="price-sub">Investimento único</div>
+          <div class="pricing-installments">ou 12x de R$ 33,08</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Diagnóstico completo</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Mensagens prontas</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Automação de follow-up</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Organização do WhatsApp Business</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Beta%20de%20R%24%20397" target="_blank" rel="noopener" class="btn-pricing">Contratar plano Beta →</a>
+          <div class="payment-methods" aria-hidden="true">
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><path d="M15.2 7.3l-1.5 9.4h-1.8l1.5-9.4h1.8zM21.2 11c0-1.2.8-1.8 1.4-1.8h1V7.4h-1c-.5 0-1 .2-1.3.6l-.1-.6h-1.6c-.2.8-.6 2.2-.6 2.2v.1h.1s.6 0 .6.2c0 .2-.2.8-.5 1.3l-.4 1h1.7l.7-1.4-.1-1.2zm2.4-1.6c.2-.4.5-.7.8-.9.3-.2.6-.3 1-.3v2.6h-.7c-.6 0-1.1-1.4-1.1-1.4zm5.2-2.1h-1.2l-1.8 4.9-.6-3c-.1-.5-.5-1-1.1-1h-.1l-1.7.2.1.3h.1c.3.1.5.4.6.8l.8 3.8h1.8l2.8-4.5v4.5h1.7V7.3h-1.4z" fill="#aaa"/><rect x="19.5" y="15" width="8" height="2" rx="1" fill="#555"/></svg>
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><circle cx="14" cy="12" r="6" fill="#aaa"/><circle cx="24" cy="12" r="6" fill="#555"/></svg>
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><path d="M27 8.5c-2 0-3.5 1.5-3.5 3.5s1.5 3.5 3.5 3.5 3.5-1.5 3.5-3.5S29 8.5 27 8.5z" fill="#aaa"/><path d="M11 8.5c-2 0-3.5 1.5-3.5 3.5S9 15.5 11 15.5s3.5-1.5 3.5-3.5S13 8.5 11 8.5z" fill="#555"/></svg>
+          </div>
+        </div>
+
+        <div class="pricing-card featured reveal">
+          <span class="pricing-badge">Mais vendido</span>
+          <h3>Completo</h3>
+          <div class="price">R$ 997</div>
+          <div class="price-sub">Investimento único</div>
+          <div class="pricing-installments">ou 12x de R$ 83,08</div>
+          <span class="pricing-guarantee">
+            <svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+            7 dias de garantia
+          </span>
+          <ul>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Tudo do Beta</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Automação avançada</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Manual de atendimento personalizado</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Relatório de desempenho</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Suporte prioritário por 30 dias</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Completo%20de%20R%24%20997" target="_blank" rel="noopener" class="btn-pricing">Contratar plano Completo →</a>
+          <div class="payment-methods" aria-hidden="true">
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><path d="M15.2 7.3l-1.5 9.4h-1.8l1.5-9.4h1.8zM21.2 11c0-1.2.8-1.8 1.4-1.8h1V7.4h-1c-.5 0-1 .2-1.3.6l-.1-.6h-1.6c-.2.8-.6 2.2-.6 2.2v.1h.1s.6 0 .6.2c0 .2-.2.8-.5 1.3l-.4 1h1.7l.7-1.4-.1-1.2zm2.4-1.6c.2-.4.5-.7.8-.9.3-.2.6-.3 1-.3v2.6h-.7c-.6 0-1.1-1.4-1.1-1.4zm5.2-2.1h-1.2l-1.8 4.9-.6-3c-.1-.5-.5-1-1.1-1h-.1l-1.7.2.1.3h.1c.3.1.5.4.6.8l.8 3.8h1.8l2.8-4.5v4.5h1.7V7.3h-1.4z" fill="#aaa"/><rect x="19.5" y="15" width="8" height="2" rx="1" fill="#555"/></svg>
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><circle cx="14" cy="12" r="6" fill="#aaa"/><circle cx="24" cy="12" r="6" fill="#555"/></svg>
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><path d="M27 8.5c-2 0-3.5 1.5-3.5 3.5s1.5 3.5 3.5 3.5 3.5-1.5 3.5-3.5S29 8.5 27 8.5z" fill="#aaa"/><path d="M11 8.5c-2 0-3.5 1.5-3.5 3.5S9 15.5 11 15.5s3.5-1.5 3.5-3.5S13 8.5 11 8.5z" fill="#555"/></svg>
+          </div>
+        </div>
+
+        <div class="pricing-card reveal">
+          <h3>Mensalidade</h3>
+          <div class="price">R$ 297 <small>/mês</small></div>
+          <div class="price-sub">Suporte contínuo</div>
+          <div class="pricing-installments">ou 12x de R$ 24,75</div>
+          <ul>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Ajustes e melhorias</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Acompanhamento mensal</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Relatórios de resultados</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Suporte via WhatsApp</li>
+            <li><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>Novas funcionalidades</li>
+          </ul>
+          <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20contratar%20o%20plano%20Mensalidade%20de%20R%24%20297%2Fm%C3%AAs" target="_blank" rel="noopener" class="btn-pricing">Contratar Mensalidade →</a>
+          <div class="payment-methods" aria-hidden="true">
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><path d="M15.2 7.3l-1.5 9.4h-1.8l1.5-9.4h1.8zM21.2 11c0-1.2.8-1.8 1.4-1.8h1V7.4h-1c-.5 0-1 .2-1.3.6l-.1-.6h-1.6c-.2.8-.6 2.2-.6 2.2v.1h.1s.6 0 .6.2c0 .2-.2.8-.5 1.3l-.4 1h1.7l.7-1.4-.1-1.2zm2.4-1.6c.2-.4.5-.7.8-.9.3-.2.6-.3 1-.3v2.6h-.7c-.6 0-1.1-1.4-1.1-1.4zm5.2-2.1h-1.2l-1.8 4.9-.6-3c-.1-.5-.5-1-1.1-1h-.1l-1.7.2.1.3h.1c.3.1.5.4.6.8l.8 3.8h1.8l2.8-4.5v4.5h1.7V7.3h-1.4z" fill="#aaa"/><rect x="19.5" y="15" width="8" height="2" rx="1" fill="#555"/></svg>
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><circle cx="14" cy="12" r="6" fill="#aaa"/><circle cx="24" cy="12" r="6" fill="#555"/></svg>
+            <svg viewBox="0 0 38 24" xmlns="http://www.w3.org/2000/svg"><rect x=".5" y=".5" width="37" height="23" rx="3" fill="none" stroke="#555"/><path d="M27 8.5c-2 0-3.5 1.5-3.5 3.5s1.5 3.5 3.5 3.5 3.5-1.5 3.5-3.5S29 8.5 27 8.5z" fill="#aaa"/><path d="M11 8.5c-2 0-3.5 1.5-3.5 3.5S9 15.5 11 15.5s3.5-1.5 3.5-3.5S13 8.5 11 8.5z" fill="#555"/></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="container">
+      <span class="section-tag">FAQ</span>
+      <h2 id="faq-title" class="section-title">Dúvidas frequentes</h2>
+      <p class="section-desc" style="margin-bottom: 0;">Respostas rápidas para as perguntas mais comuns.</p>
+      <div class="faq-list" role="list">
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Como funciona o diagnóstico gratuito?
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Analisamos seu WhatsApp Business e identificamos até 3 pontos de melhoria. Enviamos um relatório simples com sugestões práticas que você pode aplicar no mesmo dia.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Preciso ter WhatsApp Business?
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim, o WhatsApp Business é gratuito e essencial para empresas. Se você ainda não tem, nós ajudamos a configurar durante o diagnóstico.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Quanto tempo leva para implementar?
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>O diagnóstico sai em até 48 horas. Planos pagos são implementados em até 7 dias úteis, dependendo da complexidade.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            E se eu não ficar satisfeito com o plano Completo?
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Oferecemos 7 dias de garantia. Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Posso cancelar a mensalidade quando quiser?
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Sim, sem multa nem burocracia. Você pode cancelar a qualquer momento e mantém os materiais já entregues.</p>
+          </div>
+        </div>
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false">
+            Vocês atendem empresas de qualquer porte?
+            <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <p>Atendemos desde MEIs até médias empresas. Cada solução é adaptada ao volume de atendimento e necessidades do seu negócio.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" aria-labelledby="contato-title">
+    <div class="container">
+      <div class="form-wrapper">
+        <div class="form-text">
+          <span class="section-tag">Contato</span>
+          <h2 id="contato-title" class="section-title">Quer falar agora?</h2>
+          <p>Deixe seus dados e entraremos em contato em até 24 horas para oferecer um diagnóstico personalizado.</p>
+        </div>
+        <div class="form-card" id="form-card">
+          <form id="leadForm" novalidate data-endpoint="https://api.web3forms.com/submit">
+            <input type="hidden" name="access_key" value="cd731150-1b90-475b-87a2-34234690cb54">
+            <input type="hidden" name="_subject" value="Novo lead - haniel.tech">
+            <div class="form-group">
+              <label for="formNome">Nome</label>
+              <input type="text" id="formNome" name="nome" placeholder="Seu nome completo" required>
+            </div>
+            <div class="form-group">
+              <label for="formEmail">E-mail</label>
+              <input type="email" id="formEmail" name="email" placeholder="seu@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="formTelefone">Telefone / WhatsApp</label>
+              <input type="tel" id="formTelefone" name="telefone" placeholder="(11) 99999-9999" required>
+            </div>
+            <div class="form-group">
+              <label for="formInteresse">O que te interessa?</label>
+              <select id="formInteresse" name="interesse">
+                <option value="">Selecione uma opção</option>
+                <option value="diagnostico">Diagnóstico gratuito</option>
+                <option value="beta">Plano Beta (R$ 397)</option>
+                <option value="completo">Plano Completo (R$ 997)</option>
+                <option value="mensalidade">Mensalidade (R$ 297/mês)</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+            <div class="form-group" id="formError" style="display:none;">
+              <p style="color:#ef4444;font-size:0.85rem;">Ocorreu um erro ao enviar. Tente novamente ou fale conosco pelo WhatsApp.</p>
+            </div>
+            <button type="submit" class="btn-primary" id="formSubmit">
+              Quero ser contactado
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <h3>Recebemos sua solicitação!</h3>
+            <p>Entraremos em contato em até 24 horas pelo WhatsApp. Fique de olho!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cta-final">
+    <div class="container">
+      <span class="section-tag">Vamos começar</span>
+      <h2 class="section-title">Pronto para transformar seu negócio?</h2>
+      <p class="section-desc">
+        Clique no botão abaixo e receba um <strong>diagnóstico gratuito</strong> do seu WhatsApp Business.<br>
+        <span class="cta-guarantee">Resultado ou seu dinheiro de volta.</span>
+      </p>
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20gratuito" target="_blank" rel="noopener" class="btn-primary" aria-label="Solicitar diagnóstico gratuito pelo WhatsApp">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        Quero um diagnóstico gratuito
+      </a>
+      <p class="small-note">Sem compromisso. Respondemos em até 24 horas.</p>
+    </div>
+  </section>
+
+  <div class="sticky-cta" id="stickyCta">
+    <div class="container">
+      <span class="sticky-cta-text">🔥 Diagnóstico gratuito para seu WhatsApp</span>
+      <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20gratuito" target="_blank" rel="noopener" class="sticky-cta-btn">
+        Quero o meu
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <button class="sticky-cta-close" id="stickyCtaClose" aria-label="Fechar">&times;</button>
+    </div>
+  </div>
+
+  <a href="https://wa.me/5511999999999?text=Ol%C3%A1%2C%20quero%20um%20diagn%C3%B3stico%20gratuito" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div>
+        <h4><span class="logo"><span>haniel</span>.tech</span></h4>
+        <p>Automação e tecnologia para empresas. Soluções inteligentes em atendimento, sistemas e transformação digital.</p>
+        <div class="payment-methods footer-payment" aria-hidden="true">
+          <span class="pm-label">PIX</span>
+          <span class="pm-label">Cartão</span>
+          <span class="pm-label">Boleto</span>
+        </div>
+      </div>
+      <div>
+        <h4>Navegação</h4>
+        <ul class="footer-links">
+          <li><a href="#problema">Problemas</a></li>
+          <li><a href="#solucao">Soluções</a></li>
+          <li><a href="#precos">Preços</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul class="footer-links">
+          <li><a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="mailto:hanielsilvasantos3@gmail.com">hanielsilvasantos3@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 <strong>haniel.tech</strong> — Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "haniel.tech",
+    "description": "Automação de processos, atendimento inteligente via WhatsApp e criação de sites e sistemas para empresas.",
+    "url": "https://haniel.tech",
+    "email": "oi@haniel.tech",
+    "telephone": "+55-11-99999-9999",
+    "priceRange": "R$ 0 - R$ 997",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressCountry": "BR"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "bestRating": "5",
+      "ratingCount": "50"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Planos haniel.tech",
+      "itemListElement": [
+        { "@type": "Offer", "name": "Diagnóstico", "price": "0", "priceCurrency": "BRL" },
+        { "@type": "Offer", "name": "Plano Beta", "price": "397", "priceCurrency": "BRL" },
+        { "@type": "Offer", "name": "Plano Completo", "price": "997", "priceCurrency": "BRL" },
+        { "@type": "Offer", "name": "Mensalidade", "price": "297", "priceCurrency": "BRL" }
+      ]
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Como funciona o diagnóstico gratuito?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Analisamos seu WhatsApp Business e identificamos até 3 pontos de melhoria. Enviamos um relatório simples com sugestões práticas que você pode aplicar no mesmo dia." }
+    },{
+      "@type": "Question",
+      "name": "Preciso ter WhatsApp Business?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim, o WhatsApp Business é gratuito e essencial para empresas. Se você ainda não tem, nós ajudamos a configurar durante o diagnóstico." }
+    },{
+      "@type": "Question",
+      "name": "Quanto tempo leva para implementar?",
+      "acceptedAnswer": { "@type": "Answer", "text": "O diagnóstico sai em até 48 horas. Planos pagos são implementados em até 7 dias úteis, dependendo da complexidade." }
+    },{
+      "@type": "Question",
+      "name": "E se eu não ficar satisfeito com o plano Completo?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Oferecemos 7 dias de garantia. Se não ficar satisfeito, devolvemos 100% do seu dinheiro. Sem burocracia." }
+    },{
+      "@type": "Question",
+      "name": "Posso cancelar a mensalidade quando quiser?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sim, sem multa nem burocracia. Você pode cancelar a qualquer momento e mantém os materiais já entregues." }
+    },{
+      "@type": "Question",
+      "name": "Vocês atendem empresas de qualquer porte?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Atendemos desde MEIs até médias empresas. Cada solução é adaptada ao volume de atendimento e necessidades do seu negócio." }
+    }]
+  }
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
