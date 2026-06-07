@@ -5,14 +5,14 @@
 }
 
 :root {
-  --bg: #0f0f0f;
-  --surface: #1a1a1a;
-  --surface-hover: #222;
-  --border: #2a2a2a;
+  --bg: #000000;
+  --surface: #111111;
+  --surface-hover: #1a1a1a;
+  --border: #1f1f1f;
   --text: #f5f5f5;
   --text-muted: #a0a0a0;
-  --gradient-1: #7C3AED;
-  --gradient-2: #3B82F6;
+  --gradient-1: #5304b1;
+  --gradient-2: #c600f9;
   --radius: 16px;
   --radius-sm: 10px;
   --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -48,7 +48,7 @@ img { max-width: 100%; display: block; }
 }
 
 ::selection {
-  background: rgba(124, 58, 237, 0.4);
+  background: rgba(83, 4, 177, 0.4);
   color: #fff;
 }
 
@@ -118,7 +118,7 @@ header {
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(15, 15, 15, 0.85);
+  background: rgba(0, 0, 0, 0.85);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-bottom: 1px solid var(--border);
@@ -139,7 +139,7 @@ header .container {
 }
 
 .logo span {
-  color: #7C3AED;
+  color: #5304b1;
   background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -221,7 +221,7 @@ section:not(#hero):not(#contato):not(#cta-final)::after {
   width: 70%;
   max-width: 400px;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(124, 58, 237, 0.25), rgba(59, 130, 246, 0.25), transparent);
+  background: linear-gradient(90deg, transparent, rgba(83, 4, 177, 0.25), rgba(198, 0, 249, 0.25), transparent);
   pointer-events: none;
 }
 
@@ -272,8 +272,8 @@ section {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(45deg, rgba(124, 58, 237, 0.02) 1px, transparent 1px),
-    linear-gradient(-45deg, rgba(59, 130, 246, 0.02) 1px, transparent 1px);
+    linear-gradient(45deg, rgba(83, 4, 177, 0.02) 1px, transparent 1px),
+    linear-gradient(-45deg, rgba(198, 0, 249, 0.02) 1px, transparent 1px);
   background-size: 60px 60px;
   animation: gridPan 30s linear infinite;
   pointer-events: none;
@@ -288,7 +288,7 @@ section {
   right: -15%;
   width: 600px;
   height: 600px;
-  background: radial-gradient(circle, rgba(124, 58, 237, 0.1), transparent 70%);
+  background: radial-gradient(circle, rgba(83, 4, 177, 0.1), transparent 70%);
   pointer-events: none;
   z-index: 0;
   animation: orbFloat 8s ease-in-out infinite;
@@ -300,7 +300,7 @@ section {
   left: -15%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(59, 130, 246, 0.08), transparent 70%);
+  background: radial-gradient(circle, rgba(198, 0, 249, 0.08), transparent 70%);
   pointer-events: none;
   z-index: 0;
   animation: orbFloat 10s ease-in-out infinite reverse;
@@ -336,7 +336,7 @@ section {
 }
 
 .hero-content h1 span {
-  color: #7C3AED;
+  color: #5304b1;
   background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -362,7 +362,7 @@ section {
 .hero-stat h4 {
   font-size: 1.75rem;
   font-weight: 900;
-  color: #3B82F6;
+  color: #c600f9;
   background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -432,12 +432,12 @@ section {
   font-family: inherit;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
-  box-shadow: 0 4px 20px rgba(124, 58, 237, 0.3);
+  box-shadow: 0 4px 20px rgba(83, 4, 177, 0.3);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(124, 58, 237, 0.45);
+  box-shadow: 0 8px 30px rgba(83, 4, 177, 0.45);
 }
 
 .btn-primary:active {
@@ -462,7 +462,7 @@ section {
 
 .btn-secondary:hover {
   border-color: var(--gradient-1);
-  background: rgba(124, 58, 237, 0.06);
+  background: rgba(83, 4, 177, 0.06);
 }
 
 .hero-buttons {
@@ -504,13 +504,13 @@ section {
 }
 
 .problem-card:hover::before { opacity: 1; }
-.problem-card:hover { transform: translateY(-6px); border-color: var(--surface-hover); box-shadow: 0 8px 32px rgba(124, 58, 237, 0.12); }
+.problem-card:hover { transform: translateY(-6px); border-color: var(--surface-hover); box-shadow: 0 8px 32px rgba(83, 4, 177, 0.12); }
 
 .problem-icon {
   width: 48px;
   height: 48px;
   border-radius: 12px;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(59, 130, 246, 0.15));
+  background: linear-gradient(135deg, rgba(83, 4, 177, 0.15), rgba(198, 0, 249, 0.15));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -550,14 +550,14 @@ section {
 .solution-card:hover {
   transform: translateY(-6px);
   border-color: var(--gradient-1);
-  box-shadow: 0 12px 48px rgba(124, 58, 237, 0.15);
+  box-shadow: 0 12px 48px rgba(83, 4, 177, 0.15);
 }
 
 .solution-icon {
   width: 68px;
   height: 68px;
   border-radius: 18px;
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.12), rgba(59, 130, 246, 0.12));
+  background: linear-gradient(135deg, rgba(83, 4, 177, 0.12), rgba(198, 0, 249, 0.12));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -602,13 +602,13 @@ section {
 .testimonial-card:hover {
   transform: translateY(-4px);
   border-color: var(--surface-hover);
-  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.1);
+  box-shadow: 0 8px 32px rgba(83, 4, 177, 0.1);
 }
 
 .testimonial-card .quote {
   font-size: 2.5rem;
   line-height: 1;
-  color: #7C3AED;
+  color: #5304b1;
   background: linear-gradient(135deg, var(--gradient-1), var(--gradient-2));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -685,16 +685,16 @@ section {
   position: relative;
 }
 
-.pricing-card:hover { transform: translateY(-6px); border-color: var(--gradient-1); box-shadow: 0 8px 32px rgba(124, 58, 237, 0.1); }
+.pricing-card:hover { transform: translateY(-6px); border-color: var(--gradient-1); box-shadow: 0 8px 32px rgba(83, 4, 177, 0.1); }
 
 .pricing-card.featured {
-  border-color: rgba(124, 58, 237, 0.4);
-  background: linear-gradient(135deg, rgba(124, 58, 237, 0.06), rgba(59, 130, 246, 0.06));
-  box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.2), 0 8px 32px rgba(124, 58, 237, 0.06);
+  border-color: rgba(83, 4, 177, 0.4);
+  background: linear-gradient(135deg, rgba(83, 4, 177, 0.06), rgba(198, 0, 249, 0.06));
+  box-shadow: 0 0 0 1px rgba(83, 4, 177, 0.2), 0 8px 32px rgba(83, 4, 177, 0.06);
 }
 
 .pricing-card.featured:hover {
-  box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.4), 0 12px 40px rgba(124, 58, 237, 0.12);
+  box-shadow: 0 0 0 1px rgba(83, 4, 177, 0.4), 0 12px 40px rgba(83, 4, 177, 0.12);
 }
 
 .pricing-badge {
@@ -787,7 +787,7 @@ section {
 }
 
 .pricing-card .btn-pricing:hover {
-  background: rgba(124, 58, 237, 0.08);
+  background: rgba(83, 4, 177, 0.08);
   border-color: var(--gradient-1);
 }
 
@@ -836,7 +836,7 @@ section {
   right: -30%;
   width: 500px;
   height: 500px;
-  background: radial-gradient(circle, rgba(124, 58, 237, 0.08), transparent 70%);
+  background: radial-gradient(circle, rgba(83, 4, 177, 0.08), transparent 70%);
   pointer-events: none;
 }
 
@@ -885,8 +885,8 @@ section {
 .form-group select:focus {
   border-color: var(--gradient-1);
   outline: none;
-  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
-  background: rgba(124, 58, 237, 0.03);
+  box-shadow: 0 0 0 3px rgba(83, 4, 177, 0.15);
+  background: rgba(83, 4, 177, 0.03);
 }
 
 .form-group input::placeholder { color: #555; }
@@ -997,7 +997,7 @@ section {
   transform: translate(-50%, -50%);
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(124, 58, 237, 0.1), transparent 70%);
+  background: radial-gradient(circle, rgba(83, 4, 177, 0.1), transparent 70%);
   pointer-events: none;
 }
 
@@ -1030,7 +1030,7 @@ section {
   left: 0;
   right: 0;
   z-index: 98;
-  background: rgba(15, 15, 15, 0.92);
+  background: rgba(0, 0, 0, 0.92);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border-top: 1px solid var(--border);
@@ -1215,7 +1215,7 @@ footer .footer-bottom {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(15, 15, 15, 0.98);
+    background: rgba(0, 0, 0, 0.98);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
