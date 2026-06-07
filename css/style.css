@@ -771,8 +771,10 @@ section {
 }
 
 .pricing-card .btn-pricing {
-  display: block;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
   padding: 12px;
   border-radius: 100px;
   border: 1px solid var(--border);
