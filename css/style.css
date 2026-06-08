@@ -893,6 +893,15 @@ section {
 
 .form-group input::placeholder { color: #555; }
 
+.form-group select option {
+  background: #111;
+  color: #f5f5f5;
+}
+
+.form-group select option[value=""] {
+  color: #555;
+}
+
 .form-card .btn-primary { width: 100%; justify-content: center; }
 
 .form-success {
