@@ -26,7 +26,7 @@
       this.speedX = (Math.random() - 0.5) * 0.25;
       this.speedY = -Math.random() * 0.15 - 0.05;
       this.opacity = Math.random() * 0.35 + 0.05;
-      this.color = Math.random() > 0.5 ? '124, 58, 237' : '59, 130, 246';
+      this.color = Math.random() > 0.5 ? '83, 4, 177' : '198, 0, 249';
     }
     update() {
       this.x += this.speedX;
@@ -61,7 +61,7 @@
           ctx.beginPath();
           ctx.moveTo(particles[i].x, particles[i].y);
           ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(124, 58, 237, ${0.04 * (1 - dist / 150)})`;
+          ctx.strokeStyle = `rgba(83, 4, 177, ${0.04 * (1 - dist / 150)})`;
           ctx.lineWidth = 0.5;
           ctx.stroke();
         }
@@ -103,14 +103,14 @@
   (function typingCode() {
     const codeLines = [
       '<span class="comment">// haniel.tech</span>',
-      '<span class="keyword">function</span> atenderCliente() {',
-      '&nbsp;&nbsp;<span class="keyword">const</span> msg = <span class="string">"Olá! Como posso ajudar?"</span>;',
-      '&nbsp;&nbsp;<span class="function">enviarWhatsApp</span>(msg);',
-      '&nbsp;&nbsp;<span class="keyword">await</span> <span class="function">resolver</span>();',
-      '&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"Cliente satisfeito ✅"</span>;',
+      '<span class="keyword">function</span> criarSite() {',
+      '&nbsp;&nbsp;<span class="keyword">const</span> projeto = <span class="string">"Landing Page"</span>;',
+      '&nbsp;&nbsp;<span class="function">designResponsivo</span>(projeto);',
+      '&nbsp;&nbsp;<span class="keyword">await</span> <span class="function">entregar</span>();',
+      '&nbsp;&nbsp;<span class="keyword">return</span> <span class="string">"Cliente satisfeito 🚀"</span>;',
       '}',
       '',
-      '<span class="comment">// 100% automatizado 🤖</span>'
+      '<span class="comment">// sites e sistemas sob medida</span>'
     ];
 
     const container = document.getElementById('typingCode');
